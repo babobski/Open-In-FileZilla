@@ -85,6 +85,11 @@ if (typeof(extensions.openInFileZilla) === 'undefined') extensions.openInFileZil
 		return false;
 		
 	};
+	
+	this.openSettings = function() {
+		var features = "chrome,titlebar,toolbar,centerscreen";
+		window.openDialog('chrome://openInFileZilla/content/pref-overlay.xul', "openInFileZillaSettings", features);
+	};
 
 	this._notifcation = function($message){
 		$message = $message || false;

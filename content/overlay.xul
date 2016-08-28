@@ -8,6 +8,7 @@
     <commandset id="allcommands">
 	  <command id="Tasks:openCurrentFileLocation" oncommand="extensions.openInFileZilla.openCurrentFileInFilezilla();"/>
 	  <command id="Tasks:openCurrentPlacesFileLocation" oncommand="extensions.openInFileZilla.openCurrentPlacesFileInFilezilla(this);"/>
+	  <command id="Tasks:openSettings" oncommand="extensions.openInFileZilla.openSettings();"/>
     </commandset>
 
     <menupopup id="popup_tools">
@@ -18,8 +19,8 @@
                   observes="Tasks:openCurrentFileLocation"
                   class="menu-iconic-wide" />
 		  <menuitem id="menu_openInFileZilla_settings"
-                  label="Open in FileZilla Settings"
-                  observes="Tasks:LessSettings"
+                  label="Open Settings"
+                  observes="Tasks:openSettings"
                   class="menu-iconic-wide" />
         </menupopup>
       </menu>

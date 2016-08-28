@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="less://komodo/skin/global/global.less" type="text/css"?>
+<?xml-stylesheet href="less://openInFileZilla/skin/openInFileZilla.less" type="text/css"?>
+<overlay id="openInFileZillaPlaces" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://openInFileZilla/content/overlay.js" />
+
+    <commandset id="allcommands">
+		<command id="Tasks:openCurrentFileLocation" oncommand="extensions.openInFileZilla.openCurrentFileInFilezilla();"/>
+	  <command id="Tasks:openCurrentPlacesFileLocation" oncommand="extensions.openInFileZilla.openCurrentPlacesFileInFilezilla(this);"/>
+    </commandset>
+	
+	<menupopup id="places-files-popup">
+		<menu id="menu_openInFileZilla" label="FileZilla">
+			<menupopup id="menu_paces_popup" label="FileZilla">
+				<menuitem id="menu_openInPlacesFileZilla_file"
+                  label="Open location"
+                  observes="Tasks:openCurrentPlacesFileLocation"
+                  class="menu-iconic-wide" />
+			</menupopup>
+		</menu>
+	</menupopup>
+</overlay>

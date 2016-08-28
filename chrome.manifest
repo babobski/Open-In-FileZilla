@@ -1,0 +1,5 @@
+content openInFileZilla content/
+overlay chrome://komodo/content/komodo.xul chrome://openInFileZilla/content/overlay.xul
+overlay chrome://komodo-places/content/places_panel.xul  chrome://openInFileZilla/content/overlay-places.xul
+
+skin openInFileZilla classic/1.0 skin/

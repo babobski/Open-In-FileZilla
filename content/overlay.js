@@ -55,6 +55,11 @@ if (typeof(extensions.openInFileZilla) === 'undefined') extensions.openInFileZil
 			return false;
 		}
 		
+		if (pathFileZilla.length === 0) {
+			self.openWarning();
+			return false;
+		}
+		
 		if (file.isRemoteFile) {
 			// Remote
 			var serverInfo = RCS.getConnectionUsingUri(file.URI);
@@ -86,9 +91,20 @@ if (typeof(extensions.openInFileZilla) === 'undefined') extensions.openInFileZil
 		
 	};
 	
+	this._openConfig = function() {
+		setTimeout(function(){
+			self.openSettings();
+		}, 1000);
+	};
+	
 	this.openSettings = function() {
 		var features = "chrome,titlebar,toolbar,centerscreen";
 		window.openDialog('chrome://openInFileZilla/content/pref-overlay.xul', "openInFileZillaSettings", features);
+	};
+	
+	this.openWarning = function() {
+		var features = "chrome,titlebar,toolbar,centerscreen";
+		window.openDialog('chrome://openInFileZilla/content/config-warning.xul', "openInFileZillaWarning", features, self);
 	};
 
 	this._notifcation = function($message){

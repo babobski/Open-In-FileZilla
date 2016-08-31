@@ -16,7 +16,7 @@
 		</preferences>
 		
 		<html:h3>
-			Location FileZilla
+			Location FileZilla executable
 		</html:h3>
 		<textbox id="locFileZilla" preference="pref_locFileZilla" />
 		

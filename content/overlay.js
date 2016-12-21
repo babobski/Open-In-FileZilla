@@ -65,7 +65,7 @@ if (typeof(extensions.openInFileZilla) === 'undefined') extensions.openInFileZil
 			var serverInfo = RCS.getConnectionUsingUri(file.URI);
 			var serverPath = type === 'file'? file.dirName : (file.dirName + '/' + file.baseName);
 			ko.run.output.kill(); // Kill any running command
-			ko.run.command('"' + pathFileZilla + '" ' + serverInfo.username +':'+ serverInfo.password +'@'+serverInfo.server+':'+serverInfo.port + serverPath, {
+			ko.run.command('"' + pathFileZilla + '" ' + serverInfo.username +':"\"'+ serverInfo.password +'"\"@'+serverInfo.server+':'+serverInfo.port + serverPath, {
 				"runIn": 'no-console',
 				"openOutputWindow": false,	
 			});

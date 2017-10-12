@@ -3,7 +3,7 @@
  */
 
 if (typeof(extensions) === 'undefined') extensions = {};
-if (typeof(extensions.openInFileZilla) === 'undefined') extensions.openInFileZilla = { version : '1.0' };
+if (typeof(extensions.openInFileZilla) === 'undefined') extensions.openInFileZilla = { version : '1.2' };
 (function() {	
 	const { classes: Cc, interfaces: Ci } = Components;
 	

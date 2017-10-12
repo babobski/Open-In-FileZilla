@@ -27,7 +27,7 @@
     </menupopup>
 
     <menupopup id="editorContextMenu">
-      <menu id="menu_openInFileZilla_context" label="FileZilla">
+      <menu id="menu_openInFileZilla_context" insertafter="editor-context-replace" label="FileZilla">
           <menupopup id="menu_openInFileZilla_context_popup">
             <menuitem id="menu_openInFileZilla_context_file"
                     label="Open current file location"

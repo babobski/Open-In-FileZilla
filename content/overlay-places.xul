@@ -12,7 +12,7 @@
     </commandset>
 	
 	<menupopup id="places-files-popup">
-		<menu id="menu_openInFileZilla" label="FileZilla">
+		<menu id="menu_openInFileZilla" insertafter="placesContextMenu_rename" label="FileZilla">
 			<menupopup id="menu_paces_popup" label="FileZilla">
 				<menuitem id="menu_openInPlacesFileZilla_file"
                   label="Open location"

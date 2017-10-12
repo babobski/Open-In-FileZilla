@@ -6,7 +6,9 @@
 <prefwindow id="less-prefs"
      title="Open In FileZilla Preferences"
 	 width="300"
-	 height="200"
+	 height="140"
+	 class="modal"
+	 hidechrome="true"
 	 xmlns:html="http://www.w3.org/1999/xhtml"
      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	
